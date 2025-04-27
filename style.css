@@ -900,3 +900,13 @@
   margin-right: 12px;
   margin-top: 2px;
 }
+
+/* Custom fix for Om's photo */
+.founder-img.om {
+  object-position: center top;
+}
+
+/* Custom fix for Shreyas's photo */
+.founder-img.shreyas {
+  object-position: center 20%;
+}
