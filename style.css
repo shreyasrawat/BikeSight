@@ -203,8 +203,8 @@
   
   /* --- Enhanced Homepage Styles --- */
   .enhanced-hero {
-    background: linear-gradient(120deg, #e0f7fa 60%, #f9f9f9 100%), url('images/hero-bg-shape.svg') no-repeat right bottom;
-    background-size: cover, 320px 180px;
+    background: linear-gradient(120deg, #e0f7fa 60%, #f9f9f9 100%);
+    background-size: cover;
     box-shadow: 0 4px 24px rgba(67,206,162,0.10);
     border-radius: 18px;
     margin: 32px auto 0 auto;
@@ -765,9 +765,6 @@
     .hero-badges {
       gap: 6px;
       margin-bottom: 12px;
-    }
-    .enhanced-hero {
-      background-size: cover, 180px 90px;
     }
   }
   
