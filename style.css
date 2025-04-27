@@ -334,12 +334,14 @@
     background: #f5fafd;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(67,206,162,0.06);
-    flex: 1 1 180px;
-    min-width: 180px;
-    max-width: 220px;
+    flex: 0 1 48%;
+    max-width: 48%;
+    min-width: 260px;
     padding: 22px 18px;
     text-align: center;
     transition: box-shadow 0.2s;
+    box-sizing: border-box;
+    margin-bottom: 0;
   }
   .how-step:hover {
     box-shadow: 0 6px 18px rgba(24,90,157,0.13);
@@ -419,17 +421,19 @@
     letter-spacing: 0.5px;
   }
   
-  @media (max-width: 1100px) {
-    .hero-content, .features-list, .how-steps {
-      flex-direction: column;
-      align-items: center;
-    }
-    .feature-item, .how-step {
-      max-width: 98vw;
-      min-width: 0;
-    }
+  @media (max-width: 900px) {
+    /* Remove .how-steps and .how-step overrides here to preserve 2-column layout until 700px */
   }
   @media (max-width: 700px) {
+    .how-steps {
+      flex-direction: column;
+      gap: 18px;
+    }
+    .how-step {
+      max-width: 98vw;
+      min-width: 0;
+      flex: 1 1 100%;
+    }
     .enhanced-hero, .features-section, .how-section, .audience-section, .cta-section {
       padding: 16px 2vw;
     }
@@ -480,46 +484,57 @@
   }
   .founder-card {
     background: #f5fafd;
-    border-radius: 14px;
-    box-shadow: 0 2px 8px rgba(67,206,162,0.08);
-    padding: 28px 24px 20px 24px;
-    max-width: 260px;
-    min-width: 200px;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(67,206,162,0.13);
+    padding: 32px 24px 24px 24px;
+    max-width: 320px;
+    min-width: 220px;
     text-align: center;
-    transition: box-shadow 0.2s, transform 0.2s;
+    transition: box-shadow 0.25s, transform 0.22s;
+    margin-bottom: 12px;
+    position: relative;
+    border: 1.5px solid #e3f6f5;
   }
   .founder-card:hover {
-    box-shadow: 0 8px 24px rgba(24,90,157,0.13);
-    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 12px 32px rgba(24,90,157,0.18);
+    transform: translateY(-6px) scale(1.04);
+    border-color: #43cea2;
   }
   .founder-img {
-    width: 110px;
-    height: 110px;
+    width: 112px;
+    height: 112px;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 2px 12px rgba(24,90,157,0.10);
+    box-shadow: 0 2px 16px rgba(24,90,157,0.13);
     margin-bottom: 16px;
     border: 3px solid #43cea2;
+    background: #fff;
   }
   .founder-card h3 {
     color: #185a9d;
-    font-size: 1.18rem;
-    margin-bottom: 6px;
+    font-size: 1.22rem;
+    margin-bottom: 2px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
   }
-  .founder-card p {
+  .founder-title {
     font-size: 1.01rem;
-    color: #333;
+    color: #43cea2;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
   }
   .founder-desc {
-    display: block;
-    font-size: 0.98rem;
-    color: #4CAF50;
-    margin-top: 4px;
-  }
-  .about-mission {
-    font-size: 1.13rem;
-    color: #185a9d;
-    margin-top: 18px;
+    font-size: 1.04rem;
+    color: #1a2a33;
+    background: #e3f6f5;
+    border-radius: 10px;
+    padding: 14px 10px 10px 10px;
+    margin-top: 8px;
+    margin-bottom: 0;
+    box-shadow: 0 1px 6px rgba(67,206,162,0.07);
+    text-align: left;
+    line-height: 1.6;
   }
   @media (max-width: 700px) {
     .about-section {
@@ -528,10 +543,16 @@
     .founders-container {
       flex-direction: column;
       gap: 18px;
+      align-items: center;
     }
     .founder-card {
       max-width: 98vw;
       min-width: 0;
+      padding: 24px 8px 18px 8px;
+    }
+    .founder-desc {
+      font-size: 0.99rem;
+      padding: 10px 6px 8px 6px;
     }
   }
   
@@ -787,4 +808,98 @@
     opacity: 1;
     text-shadow: 0 1px 6px rgba(29,233,182,0.10);
   }
+  
+  .hero-main-panel {
+    background: #f5fafd;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(67,206,162,0.08);
+    padding: 24px 18px;
+    margin: 24px 0;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .hero-feature-list li {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1.08rem;
+    margin-bottom: 18px;
+    gap: 14px;
+  }
+  
+  .feature-icon-col {
+    flex: 0 0 38px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 38px;
+  }
+  
+  .feature-icon {
+    font-size: 2rem;
+    margin-right: 0;
+    margin-top: 2px;
+    display: block;
+  }
+  
+  .feature-text-col {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  @media (max-width: 700px) {
+    .hero-feature-list li {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+    }
+    .feature-icon-col {
+      height: auto;
+      margin-bottom: 2px;
+    }
+    .feature-icon {
+      font-size: 1.5rem;
+    }
+  }
+
+/* --- Custom styles for Next-Gen Bike Safety section --- */
+.hero-main-panel {
+  background: #f5fafd;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(67,206,162,0.08);
+  padding: 24px 18px;
+  margin: 24px 0;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-feature-list li {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1.08rem;
+  margin-bottom: 16px;
+}
+
+.feature-icon {
+  font-size: 1.4em;
+  margin-right: 12px;
+  margin-top: 2px;
 }
