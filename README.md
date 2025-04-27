@@ -2,6 +2,8 @@
 
 **See the Unseen. Stay Protected.**
 
+🌐 **Website:** [https://tinyurl.com/bykesyte](https://tinyurl.com/bykesyte)
+
 BikeSight is a next-generation smart safety system for bicycles, designed especially for kids and urban riders. Using a combination of computer vision, real-time alerts, and a kid-friendly design, BikeSight helps protect riders from unseen dangers on the road.
 
 ---
