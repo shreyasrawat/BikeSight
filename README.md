@@ -38,6 +38,7 @@ BykeSyte/
 ├── shop.html          # Shop (coming soon)
 ├── style.css          # Main stylesheet
 ├── script.js          # (Optional) JS for interactivity
+├── code/              # Source Code
 ├── images/            # Product, feature, and icon images
 └── README.md          # This file
 ```
