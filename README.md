@@ -1,15 +1,15 @@
-# BikeSight
+# BykeSyte
 
 **See the Unseen. Stay Protected.**
 
 🌐 **Website:** [https://tinyurl.com/BykeSyteoffical](https://tinyurl.com/BykeSyteoffical)
 
-BikeSight is a next-generation smart safety system for bicycles, designed especially for kids and urban riders. Using a combination of computer vision, real-time alerts, and a kid-friendly design, BikeSight helps protect riders from unseen dangers on the road.
+BykeSyte is a next-generation smart safety system for bicycles, designed especially for kids and urban riders. Using a combination of computer vision, real-time alerts, and a kid-friendly design, BykeSyte helps protect riders from unseen dangers on the road.
 
 ---
 
 ## 🚲 Product Overview
-BikeSight is a smart, affordable, and powerful protection system for bicycles. Built with a Raspberry Pi, high-res camera, OpenCV-based object detection, LED alert system, loud buzzer, and a portable power bank, BikeSight creates a real-time safety shield around the rider. When someone approaches or gets too close, BikeSight instantly alerts the rider with visual and audible signals, giving them the critical seconds they need to react and stay safe.
+BykeSyte is a smart, affordable, and powerful protection system for bicycles. Built with a Raspberry Pi, high-res camera, OpenCV-based object detection, LED alert system, loud buzzer, and a portable power bank, BykeSyte creates a real-time safety shield around the rider. When someone approaches or gets too close, BikeSight instantly alerts the rider with visual and audible signals, giving them the critical seconds they need to react and stay safe.
 
 ---
 
@@ -32,7 +32,7 @@ BikeSight is a smart, affordable, and powerful protection system for bicycles. B
 
 ## 📁 Folder Structure
 ```
-BikeSight/
+BykeSyte/
 ├── index.html         # Home page
 ├── about.html         # About the founders
 ├── shop.html          # Shop (coming soon)
@@ -56,10 +56,10 @@ BikeSight/
 - **Shreyas Rawat** — Co-Founder & Tech Lead
 - **Om Inamdar** — Co-Founder & Design Lead
 
-Together, they built BikeSight to help kids everywhere ride smarter, safer, and freer.
+Together, they built BykeSyte to help kids everywhere ride smarter, safer, and freer.
 
 ---
 
 ## 📫 Contact & License
 - For questions or collaboration, reach out to the founders.
-- © 2025 BikeSight. All rights reserved. 
+- © 2025 BykeSyte. All rights reserved. 
